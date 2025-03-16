@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* display: grid;
+    grid-template-areas: 
+    aside main main
+    aside main main
+    aside main main; */
+    background-color: rgb(235, 234, 234);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    display: flex;
+
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+.nav-list li{
+    margin: 0 10px;
+    list-style: none;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    transition: all ease-in 1s;
+ }
+.nav-list li a:hover{
+    transition: all ease-in 1s;
+   border-bottom: solid 1px rgb(255, 76, 76);
+   cursor: pointer;
+}
+.nav-list img{
+    width: 50px;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgb(145, 145, 145);
+}
+
+aside{
+    /* grid-area: aside; */
+    background-color: rgb(255, 76, 76);
+    padding: 15px;
+    place-items: center;
+    width: 15%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 25px 0;
+}
+aside img{
+    width: 30%;
+    margin: 10px 0;
+    border-radius: 50%;
+}
+aside .caja{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px black;
+    background-color: rgb(255, 138, 138);
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 15px;
+}
+aside .caja button{
+    margin: 0 15px;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-weight: 600;
+    transition: all ease 0.3s;
+}
+aside .caja button:hover{
+    transition: all ease 0.3s;
+    cursor: pointer;
+    background-color: azure;
+    transform: scale(0.9);
+}
+hr{
+    margin: 12px 0;
+    width: 50%;
+    border: solid 1px rgb(215, 215, 215);
+}
+main{
+    height: 100%;
+    grid-area: main;
+}

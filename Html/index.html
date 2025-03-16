@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Css/cliente.css" />
+    <link rel="stylesheet" href="/Css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-list">
+        <li><img src="/Imagenes/images.jpg" alt="" /></li>
+        <li><a href="">Archivos</a></li>
+        <li><img src="/Imagenes/images.jpg" alt="" /></li>
+        <li><a href="">Inventario</a></li>
+        <li><a href="">Facturar</a></li>
+        <li><a href="">Ver</a></li>
+      </ul>
+    </nav>
+    <main>
+      <aside>
+        <div class="caja">
+          <img src="/Imagenes/images.png" alt="" />
+          <button id="btn1">Facturación</button>
+        </div>
+        <hr />
+        <div class="caja">
+          <img src="/Imagenes/images.png" alt="" />
+          <button id="btn2">Cliente</button>
+        </div>
+        <hr />
+        <div class="caja">
+          <img src="/Imagenes/images.png" alt="" />
+          <button id="btn3">Inventario</button>
+        </div>
+        <hr />
+        <div class="caja">
+          <img src="/Imagenes/images.png" alt="" />
+          <button id="btn4" href="articulos.html">Cuentas</button>
+        </div>
+      </aside>
+
+      <!-- Contenido Principal -->
+      <article class="principal" id="principal">
+        <!-- Facturacion -->
+        <article id="div-facturacion" class="disenoBox">
+          <button id="borrar" class="borrar">X</button>
+          <nav class="nav-cliente">
+            <form>
+              <label for="buscar">Buscar:</label>
+              <input type="text" name="buscar" id="buscar" />
+            </form>
+          </nav>
+
+          <section class="cliente">
+            <ul>
+              <li>Codigo</li>
+              <li>Nombre</li>
+            </ul>
+          </section>
+
+          <section class="sec-cliente">
+            <div class="caja">
+              <img src="/Imagenes/images.png" alt="" />
+              <a href="articulos.html">Inventario</a>
+            </div>
+
+            <div class="caja">
+              <img src="/Imagenes/images.png" alt="" />
+              <a href="articulos.html">Inventario</a>
+            </div>
+          </section>
+        </article>
+        <!-- Creacion de Cliente -->
+        <article id="div-Cliente" class="disenoBox">
+          <button id="borrar" class="borrar">X</button>
+          <nav class="nav-cliente">
+            <form>
+              <label for="buscar">Buscar:</label>
+              <input type="text" name="buscar" id="buscar" />
+            </form>
+          </nav>
+
+          <section class="cliente">
+            <ul>
+              <li>Codigo</li>
+              <li>Nombre</li>
+              <li>Apellido</li>
+              <li>Cedula</li>
+              <li>Dirrecion</li>
+            </ul>
+          </section>
+
+            <div class="caja">
+              <img src="/Imagenes/images.png" alt="" />
+              <a href="articulos.html">Inventario</a>
+            </div>
+          </section>
+        </article>
+        <!-- Inventario -->
+        <article id="div-inventario" class="disenoBox">
+          <button id="borrar" class="borrar">X</button>
+          <nav class="nav-cliente">
+            <form>
+              <label for="buscar">Buscar:</label>
+              <input type="text" name="buscar" id="buscar" />
+            </form>
+          </nav>
+
+          <section class="cliente">
+            <ul>
+              <li>Codigo</li>
+              <li>Nombre</li>
+              <li>Apellido</li>
+              <li>Cedula</li>
+              <li>Dirrecion</li>
+            </ul>
+          </section>
+
+          <section class="sec-cliente">
+            <div class="caja">
+              <img src="/Imagenes/images.png" alt="" />
+              <a href="articulos.html">Inventario</a>
+            </div>
+
+            <div class="caja">
+              <img src="/Imagenes/images.png" alt="" />
+              <a href="articulos.html">Inventario</a>
+            </div>
+          </section>
+        </article>
+        <!-- Cuenta -->
+        <article id="div-cuentas" class="disenoBox">
+          <button ids="borrar" class="borrar">X</button>
+          <nav class="nav-cliente">
+            <form>
+              <label for="buscar">Buscar:</label>
+              <input type="text" name="buscar" id="buscar" />
+            </form>
+          </nav>
+
+          <section class="cliente">
+            <ul>
+              <li>Codigo</li>
+              <li>Descripcion</li>
+              <li>Existencia</li>
+            </ul>
+          </section>
+
+          <section class="sec-cliente">
+            <div class="caja">
+              <img src="/Imagenes/images.png" alt="" />
+              <a href="articulos.html">Inventario</a>
+            </div>
+
+            <div class="caja">
+              <img src="/Imagenes/images.png" alt="" />
+              <a href="articulos.html">Inventario</a>
+            </div>
+          </section>
+        </article>
+      </article>
+    </main>
+
+    <script type="module">
+      import { funcionEsconderMostrar } from '/JS/script.js';
+      funcionEsconderMostrar();
+    </script>
+  </body>
+</html>
